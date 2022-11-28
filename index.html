@@ -42,7 +42,9 @@ def convert(input, input_array):
 
     for i in range (0,intensity):
         input_array[random.randint(0,len(input_array))] = 'cock'
-    pyscript.write("output",input_array)   
+ 
+    output = output.join(input_array)
+    pyscript.write("output",output)   
     
  
 </py-script>    
@@ -54,14 +56,7 @@ def convert(input, input_array):
         </h1>
         <br />
         <p><h3>Enter your text to cockify:</h3>
-        <input id="input" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Baby girl, what's your name?
-Let me talk to you, let me buy you a drank
-I'm T-Pain, you know me
-Konvict Muzic, Nappy Boy, ooh wee
-I know the club close at three
-What's the chances of you rollin' with me?
-Back to the crib, show you how I live
-Let's get drunk, forget what we did" /></p>
+        <input id="input" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="..." /></p>
         <center>
             <button id="Cockify" type="submit"  class="btn btn-info" pys-onClick="convert">Convert</button>
 
