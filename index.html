@@ -36,7 +36,7 @@ input = document.getElementById('input').value
 input_array = []
 intensity = round(len(input_array)/5)
     
-def convert(*ags, **kws):        
+def convert(input, input_array):        
     for x in input.split(' '):
         input_array.append(x)
 
