@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     
@@ -33,15 +33,18 @@
 
 input = document.getElementById('input').value
 
-    
-input_array = []    
-for x in input.split(' '):
-    input_array.append(x)
+input_array = []
 intensity = round(len(input_array)/5)
-for i in range (0,intensity):
-    input_array[random.randint(0,len(input_array))] = 'cock'
     
-pyscript.write("output",input_array)    
+def convert(*ags, **kws):        
+    for x in input.split(' '):
+        input_array.append(x)
+
+    for i in range (0,intensity):
+        input_array[random.randint(0,len(input_array))] = 'cock'
+    pyscript.write("output",input_array)   
+    
+ 
 </py-script>    
 
     <div class="container">
