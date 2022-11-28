@@ -36,10 +36,10 @@ import random
 
 
 def convert(*ags, **kws):
+    input = document.getElementById('input').value   
     input_array = []
     output = ""
-    input = document.getElementById('input').value
-    print(input)
+    
 
     for x in input.split(' '):
         input_array.append(x)
@@ -51,8 +51,6 @@ def convert(*ags, **kws):
 
     output = ' '.join(input_array)
     pyscript.write("output",output)
-    print('test')
-    print(output)
     
  
 </py-script>    
