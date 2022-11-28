@@ -35,22 +35,22 @@
 
     
 def convert(*ags, **kws):
-    input_array = []
-    input = document.getElementById('input').value
-    print(input)
+ input_array = []
+ input = document.getElementById('input').value
+ print(input)
  
-    for x in input.split(' '):
-        input_array.append(x)
-
-    intensity = round(len(input_array)/5)
-
-    for i in range (0,intensity):
-        input_array[random.randint(0,len(input_array))] = 'cock'
+ for x in input.split(' '):
+  input_array.append(x)
  
-    output = output.join(input_array)
-    pyscript.write("output",output)   
-    print('test')
-    print(output)
+ intensity = round(len(input_array)/5)
+ 
+ for i in range (0,intensity):
+  input_array[random.randint(0,len(input_array))] = 'cock'
+ 
+ output = output.join(input_array)
+ pyscript.write("output",output)   
+ print('test')
+ print(output)
     
  
 </py-script>    
