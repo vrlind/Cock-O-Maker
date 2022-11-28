@@ -31,13 +31,13 @@
 <py-script>
     from js import document,alert
 
-input = document.getElementById('input').value
 
 
-intensity = round(len(input_array)/5)
-input_array = []
     
 def convert(*ags, **kws):
+    input_array = []
+    input = document.getElementById('input').value
+    intensity = round(len(input_array)/5)
     for x in input.split(' '):
         input_array.append(x)
 
