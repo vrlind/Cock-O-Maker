@@ -49,7 +49,7 @@ def convert(*ags, **kws):
     for i in range (0,intensity):
         input_array[random.randint(0,len(input_array))] = 'cock'
 
-    output = output.join(input_array)
+    output = ' '.join(input_array)
     pyscript.write("output",output)
     print('test')
     print(output)
